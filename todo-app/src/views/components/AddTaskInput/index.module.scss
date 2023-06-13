@@ -1,0 +1,30 @@
+.inputTask {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 60px;
+  &Title {
+    border: 1px solid #b1b1b1;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    padding: 8px 9px;
+    background: #d4e4f6; 
+    font: 1rem/1.4 'Roboto', sans-serif;
+    &::placeholder {
+      color: #7B7B7B;
+    }
+  }
+   
+  &Button {
+    border-radius: none;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border: none;
+    cursor: pointer;
+    background: #a2a8d3 url('../../../assets/icons/plus.svg') no-repeat center center;
+    transition: opacity 0.3s;
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+}
