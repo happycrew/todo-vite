@@ -2,11 +2,15 @@
   min-width: 600px;
   background: #e7eaf6;
   border-radius: 20px;
-  padding: 20px 55px;
+  padding: 20px 55px 30px;
 
   &Title {
     font-size: 42px;
     margin-bottom: 0.32em;
+    text-align: center;
+  }
+
+  &Empty {
     text-align: center;
   }
 }

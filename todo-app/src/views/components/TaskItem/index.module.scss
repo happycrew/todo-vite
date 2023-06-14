@@ -1,0 +1,71 @@
+.taskItem {
+  display: grid;
+  grid-template-columns: 1fr 50px 50px;
+  margin-bottom: 20px;
+  background: #d4e4f6;
+  border-radius: 5px;
+  padding-right: 15px;
+
+  &Label {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    padding: 12px 15px;
+    cursor: pointer;
+  }
+
+  &Checkbox {
+    width: 20px;
+    height: 20px;
+    margin: 0.5em;
+    cursor: pointer;
+  }
+
+  &Title {
+    padding: 10px;
+    line-height: 1.2;
+  }
+
+  &TitleDone {
+    padding: 10px;
+    line-height: 1.2;
+    text-decoration: line-through;
+    color: grey;
+  }
+
+  &TitleEdit {
+    font: 0.8rem/0.8em "Roboto", sans-serif;
+    border: none;
+    padding: 10px;
+    background: none;
+    box-shadow: 0 4px 0 -3px #a2a8d3 ;
+  }
+
+  &Edit,
+  &Remove,
+  &Save {
+    display: block;
+    height: 100%;
+    border: none;
+    background: none no-repeat center center;
+    cursor: pointer;
+    padding: 0;
+    transition: opacity 0.3s;
+
+    &:hover {
+      opacity: 0.6;
+    }
+  }
+
+  &Edit {
+    background-image: url('../../../assets/icons/edit.svg');
+  }
+
+  &Remove {
+    background-image: url('../../../assets/icons/trash.svg');
+  }
+
+  &Save {
+    background-image: url('../../../assets/icons/check.svg');
+  }
+}
