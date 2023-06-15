@@ -3,7 +3,6 @@ import { useTodoStore } from '@/data/stores/useToDoStore';
 import { AddTaskInput } from '../components/AddTaskInput';
 import { TaskItem } from '../components/TaskItem';
 import styles from './index.module.scss';
-import { stat } from 'fs';
 
 export const App: FC = () => {
   const [tasks, createTask, updateTask, removeTask, doneTask] = useTodoStore(
